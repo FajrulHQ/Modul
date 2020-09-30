@@ -10,7 +10,7 @@ Untuk pembuatan script python dapat menggunakan :
 
 __Tema Praktikum Penyelesaian Numerik 2020-2021__
 
-1.	[Sistem Persamaan Linear simultaneous](https://drive.google.com/drive/u/0/folders/1183IOE2AyPF-gyQVuzTEYEBTQUtLgtzp)
+1.	[Sistem Persamaan Linear simultaneous](https://github.com/FajrulHQ/Prakt-Numerik/blob/main/Acara%201/Acara%201.md)
 
 1.	Sistem non linear dan mencari akar
 
