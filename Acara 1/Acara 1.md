@@ -136,7 +136,7 @@ Maka persamaan berubah menjadi _x = D<sup>-1</sup>(L+U)x + D<sup>-1</sup>b_
 Dan secara umum persamaan iterasi metode jacobi yaitu:
 
 <center>
-    <img alt="Acara 1" src="https://github.com/FajrulHQ/pict/blob/main/Acara%201/010.png?raw=true">
+    <img alt="Acara 1" src="https://github.com/FajrulHQ/pict/blob/main/Acara%201/10.png?raw=true">
 </center>
 
 Kita asumsikan
