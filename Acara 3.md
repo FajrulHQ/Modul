@@ -8,9 +8,9 @@
     * [Acara 3 (Drive) - Curve Fitting](https://drive.google.com/drive/folders/1uMaBNZ2VWBWpx080plEPaRVnLfh66UfH?usp=sharing)
 
 ## Pengantar :
-Data-data yang bersifat diskrit dapat dibuat continuum melalui proses curve-fitting. Curve-fitting merupakan proses data-smoothing, yakni proses pendekatan terhadap kecenderungan data-data dalam bentuk persamaan model matematika.
+> Data-data yang bersifat diskrit dapat dibuat continuum melalui proses curve-fitting. Curve-fitting merupakan proses data-smoothing, yakni proses pendekatan terhadap kecenderungan data-data dalam bentuk persamaan model matematika.
 
-Misalkan tersedia data-data $y$ pada berbagai $x$ (sejumlah $n$ pasang), maka dapat dicari suatu persamaan $y = f(x)$ yang memberikan hubungan $y$ dengan $x$ yang mendekati data. Proses ini disebut curve fitting.
+> Misalkan tersedia data-data $y$ pada berbagai $x$ (sejumlah $n$ pasang), maka dapat dicari suatu persamaan $y = f(x)$ yang memberikan hubungan $y$ dengan $x$ yang mendekati data. Proses ini disebut curve fitting.
 
 <center>
 <img alt="Acara 3" src = "https://github.com/FajrulHQ/pict/blob/main/Acara%203/Picture1.png?raw=true">
