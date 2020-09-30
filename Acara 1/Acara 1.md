@@ -4,7 +4,7 @@
 > ### Link Modul 
 >* [Google Drive](https://drive.google.com/drive/folders/1uMaBNZ2VWBWpx080plEPaRVnLfh66UfH?usp=sharing)
 > * [Github](https://github.com/FajrulHQ/Prakt-Numerik)
-    * [Acara 1 (Drive) - Sistem Persamaan Linear](https://drive.google.com/drive/u/0/folders/1183IOE2AyPF-gyQVuzTEYEBTQUtLgtzp)
+>>* [Acara 1 (Drive) - Sistem Persamaan Linear](https://drive.google.com/drive/u/0/folders/1183IOE2AyPF-gyQVuzTEYEBTQUtLgtzp)
 > ### Contents
 > 1. Pendahuluan
 > 1. Tujuan
