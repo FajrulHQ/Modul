@@ -50,7 +50,9 @@
 </center>
 
 ```python
+-----------------------------------------------------------
 # Script python akan ditampilkan di jam Praktikum
+-----------------------------------------------------------
 ```
 ---
 > ## 4.Eliminasi Jacobi
@@ -122,7 +124,9 @@ Proses diatas dapat di katakan 1 proses iterasi. Untuk mencari nilai _second app
 </center>
 
 ```python
+-----------------------------------------------------------
 # Script python akan ditampilkan di jam Praktikum
+-----------------------------------------------------------
 ```
 
 > ## 5. Penerapan dibidang Geofisika
