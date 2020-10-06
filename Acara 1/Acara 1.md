@@ -10,6 +10,7 @@
 > 1. Tujuan
 > 1. Eliminasi Gauss
 > 1. Eliminasi Jacobi
+> 1. Penerapan di Geofisika
 ---
 > ## 1. Pendahuluan
 > Pada acara ke 1 ini, kita akan belajar mengenai Sistem Persamaan Linear serta implementasi kode python untuk menghitung operasi SPL.
@@ -148,6 +149,12 @@ Proses diatas dapat di katakan 1 proses iterasi. Untuk mencari nilai _second app
 
 <center>
     <img alt="Acara 1" src="https://github.com/FajrulHQ/pict/blob/main/Acara%201/13.png?raw=true">
+</center>
+
+> ## 5. Penerapan dibidang Geofisika
+> Pada iterasi jacobi memiliki bentuk `Ax = B` sama halnya dengan forward problem yaitu `Gm = d`,  dimana `G` adalah fungsi pembangkit, `m` adalah parameter model dan `d` adalah data yang dicari. pada iterasi jacobi dicari nilai `x` sedangkan pada geofisika, kita akan mencari `m`, dimana `d` sudah diperoleh dari data lapangan dan `G` adalah persamaan matematis, proses ini disebut __inverse modelling__. Diperlukan tebakan awal sebagai model awal, tebakan awal akan mempengaruhi kecepatan iterasi dalam mencapai model yang sebenarnya. dalam melakukan iterasi dilihat pada nilai errornya, jika error kecil maka sudah mendekati model sebenarnya.
+<center>
+    <img alt="Acara 1" src="https://github.com/FajrulHQ/pict/blob/main/Acara%201/14.jpg?raw=true">
 </center>
 
 ```python
