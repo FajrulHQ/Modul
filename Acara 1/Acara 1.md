@@ -71,8 +71,8 @@ Untuk memulai, selesaikan persamaan 1 untuk `x1` , persamaan 2 untuk `x2` sampai
 </center>
 
 > Dimana kita menentukan `x(0) = x1(0) , x2(0), … , xn(0)` dimana akan di dapatkan nilai _first approximation_ `x(1) = x1(1), x2(1),….,xn(1)`. 
-<br>
-Proses diatas dapat di katakan 1 proses iterasi. Untuk mencari nilai _second approximation_ dilakukan cara yang sama seperti cara _first approximation_. Dengan mengulangi iterasinya, kita akan mendapatkan urutan nilai _approximation_.
+
+>  Proses diatas dapat di katakan 1 proses iterasi. Untuk mencari nilai _second approximation_ dilakukan cara yang sama seperti cara _first approximation_. Dengan mengulangi iterasinya, kita akan mendapatkan urutan nilai _approximation_.
 
 <center>
     <img alt="Acara 1" src="https://github.com/FajrulHQ/pict/blob/main/Acara%201/06.png?raw=true">
@@ -130,7 +130,7 @@ Proses diatas dapat di katakan 1 proses iterasi. Untuk mencari nilai _second app
 ```
 
 > ## 5. Penerapan di Geofisika
-> Pada iterasi jacobi memiliki bentuk `Ax = B` sama halnya dengan forward problem yaitu `Gm = d`,  dimana `G` adalah fungsi pembangkit, `m` adalah parameter model dan `d` adalah data yang dicari. pada iterasi jacobi dicari nilai `x` sedangkan pada geofisika, kita akan mencari `m`, dimana `d` sudah diperoleh dari data lapangan dan `G` adalah persamaan matematis, proses ini disebut __inverse modelling__. Diperlukan tebakan awal sebagai model awal, tebakan awal akan mempengaruhi kecepatan iterasi dalam mencapai model yang sebenarnya. dalam melakukan iterasi dilihat pada nilai errornya, jika error kecil maka sudah mendekati model sebenarnya.
+Pada iterasi jacobi memiliki bentuk `Ax = B` sama halnya dengan forward problem yaitu `Gm = d`,  dimana `G` adalah fungsi pembangkit, `m` adalah parameter model dan `d` adalah data yang dicari. pada iterasi jacobi dicari nilai `x` sedangkan pada geofisika, kita akan mencari `m`, dimana `d` sudah diperoleh dari data lapangan dan `G` adalah persamaan matematis, proses ini disebut __inverse modelling__. Diperlukan tebakan awal sebagai model awal, tebakan awal akan mempengaruhi kecepatan iterasi dalam mencapai model yang sebenarnya. dalam melakukan iterasi dilihat pada nilai errornya, jika error kecil maka sudah mendekati model sebenarnya.
 <center>
     <img alt="Acara 1" src="https://github.com/FajrulHQ/pict/blob/main/Acara%201/14.jpeg?raw=true">
 </center>
