@@ -34,13 +34,13 @@
 > menjadi matrik augmentasi
 
 <center>
-    <img alt="Acara 1" src="https://github.com/FajrulHQ/pict/blob/main/Acara%201/02.png?raw=true">
+    <img alt="Acara 1" src="https://github.com/FajrulHQ/pict/blob/main/Acara%201/02-1.png?raw=true">
 </center>
 
 > kemudian dilakukan operasi baris dan kolom (forward elimination) sehingga matrik diatas berubah menjadi
 
 <center>
-    <img alt="Acara 1" src="https://github.com/FajrulHQ/pict/blob/main/Acara%201/02-1.png?raw=true">
+    <img alt="Acara 1" src="https://github.com/FajrulHQ/pict/blob/main/Acara%201/02.png?raw=true">
 </center>
 
 > Persamaan diselesaikan untuk `xn` dari baris ke `n`, kemudian disubtitusikan kembali (_backward subtitution_) ke persamaan untuk `xn−1` dari baris ke `(n−1)`, berdasarkan persamaan berikut:
