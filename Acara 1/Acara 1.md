@@ -51,7 +51,67 @@
 
 ```python
 -----------------------------------------------------------
-# Script python akan ditampilkan di jam Praktikum
+# Eliminasi Gauss
+
+import numpy as np
+def gaussElimin(a,b):
+  n = len(b)
+  
+  # Elimination Phase
+  for k in range(0,n-1):
+    for i in range(k+1,n):
+       
+      if a[i,k] != 0.0:
+        lam = a[i,k]/a[k,k]
+        a[i,k+1:n] = a[i,k+1:n] - lam*a[k,k+1:n]
+        b[i] = b[i] - lam*b[k]
+  
+# Back substitution
+  for k in range(n-1,-1,-1):
+    b[k] = (b[k] - a[k,k+1:n] @ b[k+1:n])/a[k,k]
+  return b
+
+A = np.array([[4.0,-2.0,1.0],
+              [-2.0,4.0,-2.0],
+              [1.0,-2.0,4.0]])
+
+B = np.array([[11.0],[-16.0],[17.0]])
+
+aOrig = A.copy() # Save original matrix
+bOrig = B.copy() # and the constant vector
+x = gaussElimin(A,B)
+det = np.prod(np.diagonal(A))
+print('x =',x.tolist())
+print('\ndet =',det)
+print('\nCheck result: \n[a][x] - [b] =',(aOrig @ x - bOrig).tolist())
+-----------------------------------------------------------
+```
+```python
+-----------------------------------------------------------
+# Forward Elimination
+def add_row(A,k,i,j):
+    "Add k times row j to row i in matrix A."
+    n = A.shape[0]
+    E = np.eye(n)
+    if i == j:
+        E[i,i] = k + 1
+    else:
+        E[i,j] = k
+    return E @ A
+
+def scale_row(A,k,i):
+    "Multiply row i by k in matrix A."
+    n = A.shape[0]
+    E = np.eye(n)
+    E[i,i] = k
+    return E @ A
+
+M = np.hstack([aOrig,bOrig]) # combine matrix A & B
+M1 = scale_row(M,1/4,0) # example of scale_row
+M2 = add_row(M1,-M1[1,0],1,0) # example of add_row
+print('%s\n'%M)
+print('scale_row:\n%s'%M1)
+print('add_row:\n%s'%M2)
 -----------------------------------------------------------
 ```
 ---
@@ -125,12 +185,77 @@ Untuk memulai, selesaikan persamaan 1 untuk `x1` , persamaan 2 untuk `x2` sampai
 
 ```python
 -----------------------------------------------------------
-# Script python akan ditampilkan di jam Praktikum
+# Eliminasi Jacobi
+
+import numpy as np
+
+A = np.array([[4.0,-2.0,1.0],
+              [-2.0,4.0,-2.0],
+              [1.0,-2.0,4.0]])
+
+b = np.array([11.0,-16.0,17.0])
+
+# toleransi error
+tolerance = 0.01
+
+# iterasi masksimal
+max_iter = 1000
+
+nA = len(A)
+
+# matrik identitas
+I = np.identity(nA)
+
+D_inv = np.zeros((nA,nA))
+
+for i in range(nA):
+    D_inv[i][i] = 1.0/A[i][i]
+
+T = I - D_inv @ A
+'''
+A = D-L-U
+A/D = 1-(L+U)/D
+
+(L+U)/D = 1 - A/D
+'''
+c = D_inv @ b
+
+# nilai x awal
+x_old = np.array([0,0,0])
+
+# perhitungan nilai x dan iterasinya
+for iteration in range(max_iter):
+    x = T @ x_old + c
+    for i in range(nA):
+        print(iteration,x[i],x[i]-x_old[i])
+
+    error = np.max(abs(x-x_old))
+    
+    x_old = x
+    
+    # cek konvergensi
+    if(error<tolerance):
+        print()
+        print("Penyelesaian matriks x adalah")
+        for i in range (nA):
+            print("x%s="%(i+1),x[i])
+        print()
+        print("error= ",error)
+        break
+-----------------------------------------------------------
+```
+```python
+-----------------------------------------------------------
+import scipy.linalg as la
+D,L,U = la.lu(A)
+print ('D (Permutation matrix): \n%s\n'%D)
+print ('L (Lower triangular): \n%s\n'%L)
+print ('U (Upper triangular): \n%s\n'%U)
 -----------------------------------------------------------
 ```
 
 > ## 5. Penerapan di Geofisika
-Pada iterasi jacobi memiliki bentuk `Ax = B` sama halnya dengan forward problem yaitu `Gm = d`,  dimana `G` adalah fungsi pembangkit, `m` adalah parameter model dan `d` adalah data yang dicari. pada iterasi jacobi dicari nilai `x` sedangkan pada geofisika, kita akan mencari `m`, dimana `d` sudah diperoleh dari data lapangan dan `G` adalah persamaan matematis, proses ini disebut __inverse modelling__. Diperlukan tebakan awal sebagai model awal, tebakan awal akan mempengaruhi kecepatan iterasi dalam mencapai model yang sebenarnya. dalam melakukan iterasi dilihat pada nilai errornya, jika error kecil maka sudah mendekati model sebenarnya.
+Pada iterasi jacobi memiliki bentuk `Ax = B` sama halnya dengan forward problem yaitu `Gm = d`,  dimana `G` adalah fungsi pembangkit, `m` adalah parameter model dan `d` adalah data yang dicari. pada iterasi jacobi dicari nilai `x` sedangkan pada geofisika, kita akan mencari `m`, dimana `d` sudah diperoleh dari data lapangan dan `G` adalah persamaan matematis, proses ini disebut __forward modelling__. Diperlukan tebakan awal sebagai model awal, tebakan awal akan mempengaruhi kecepatan iterasi dalam mencapai model yang sebenarnya. dalam melakukan iterasi dilihat pada nilai errornya, jika error kecil maka sudah mendekati model sebenarnya.
 <center>
     <img alt="Acara 1" src="https://github.com/FajrulHQ/pict/blob/main/Acara%201/14.jpeg?raw=true">
 </center>
