@@ -68,7 +68,6 @@
     <b>Gambar 2.</b> Konsep Metode Newthon Raphson
 </center>
 
-<br>
 >### Algoritma
 
 >1. Tentukan `f’(x)` secara analitik
@@ -81,7 +80,7 @@
 ```
 ---
 > ## Metode Secant
-> Jika pada metode Newton Raphson diperlukan proses iterasi untuk mendapatkan nilai akar yang baru `x_{i+1}` dan memerlukan proses derivatif dari persamaan secara analitik, seperti pada __persamaan (1)__ berikut
+Jika pada metode Newton Raphson diperlukan proses iterasi untuk mendapatkan nilai akar yang baru `x_{i+1}` dan memerlukan proses derivatif dari persamaan secara analitik, seperti pada __persamaan (1)__ berikut
 
 <center><img src="https://render.githubusercontent.com/render/math?math=x_{i%2B1}= x_i-  \frac{f(x_i)}{f'(x_i)}"></center><br>
 
