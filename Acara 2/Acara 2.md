@@ -58,17 +58,17 @@
 > ## 2. Metode Newton Raphson
 > Metode Newton Raphson adalah salah satu metode pencarian akar per-samaan nonlinear yang bersifat open methods, artinya dalam proses metode ini tidak diperlukan suatu nilai batas interval seperti metode Biseksi.<br><br>
 > Prinsip Metode Newton Raphson adalah jika suatu persamaan `f(x) = 0`, memiliki akar yang diasumsikan pada x<sub>i</sub>. Lalu dengan menggambarkan kurva tangesial pada f(x<sub>i</sub>), maka titik x<sub>i+1</sub> pada kurva tangesial yang memotong sumbu-x dianggap sebagai akar yang baru. Proses ini dilakukan terus menerus hingga mendapatkan nilai yang konvergen.
-> <center><img src="https://render.githubusercontent.com/render/math?math=n= \frac{ln (\Delta x/\varepsilon)}{ln(2)}"></center><br>
-
+> <center><img src="https://render.githubusercontent.com/render/math?math=n= \frac{ln (\Delta x/\varepsilon)}{ln(2)}"></center>
+> 
 >>maka
->> <center><img src="https://render.githubusercontent.com/render/math?math=n= \frac{ln (\Delta x/\varepsilon)}{ln(2)}"></center><br>
-
+>> <center><img src="https://render.githubusercontent.com/render/math?math=n= \frac{ln (\Delta x/\varepsilon)}{ln(2)}"></center>
 <br>
 <center>
     <img alt="Acara 2" src="https://github.com/FajrulHQ/pict/blob/main/Acara%202/Picture2.jpg?raw=true"><br>
     <b>Gambar 2.</b> Konsep Metode Newthon Raphson
 </center>
 
+<br>
 >### Algoritma
 
 >1. Tentukan `f’(x)` secara analitik
