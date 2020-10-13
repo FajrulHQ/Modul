@@ -78,17 +78,17 @@ ritma
 # Script akan dishare saat jam praktikum
 ```
 ---
-> ## Metode Secant
+ ## Metode Secant
 Jika pada metode Newton Raphson diperlukan proses iterasi untuk mendapatkan nilai akar yang baru `x_{i+1}` dan memerlukan proses derivatif dari persamaan secara analitik, seperti pada __persamaan (1)__ berikut
 
 <center><img src="https://render.githubusercontent.com/render/math?math=x_{i%2B1}= x_i-  \frac{f(x_i)}{f'(x_i)}"></center><br>
 
-> Maka proses dari metode Newton Raphson akan sedikit rumit, jika persamaan nonlinear tidak bisa dilakukan derivatif secara analitik. Oleh karena itu, dilakukan proses pendekatan secara geometri seperti pada __gambar (3)__ atau dengan melakukan pendekatan analitik seperti __persamaan (2)__ berikut
+ Maka proses dari metode Newton Raphson akan sedikit rumit, jika persamaan nonlinear tidak bisa dilakukan derivatif secara analitik. Oleh karena itu, dilakukan proses pendekatan secara geometri seperti pada __gambar (3)__ atau dengan melakukan pendekatan analitik seperti __persamaan (2)__ berikut
 
 <center><img src="https://render.githubusercontent.com/render/math?math=f(x_i )= x_i-  \frac{f(x_i)-f(x_{i-1}) }{x_i-x_{i-1} }"></center><br>
 
 
-> Substitusikan __persamaan (1)__ dan __(2)__, maka didapatkan __persamaan (3)__
+ Substitusikan __persamaan (1)__ dan __(2)__, maka didapatkan __persamaan (3)__
 
 <center><img src="https://render.githubusercontent.com/render/math?math=x_{i%2B1}= x_i-  \frac{f(x_i) - (x_i - x_{i-1})}{f(x_i)-f(x_{i-1})}"></center>
 
@@ -99,22 +99,22 @@ Jika pada metode Newton Raphson diperlukan proses iterasi untuk mendapatkan nila
 </center>
 <br>
 
-> __Persamaan (3)__ di atas lah yang melahirkan metode Secant. Dalam metode ini diperlukan 2 nilai awal, namun tidak seperti metode Biseksi yang digunakan sebagai batas interval. 2 nilai awal pada metode Secant digunakan untuk nilai x<sub>i</sub> dan x<sub>i</sub>.
+ __Persamaan (3)__ di atas lah yang melahirkan metode Secant. Dalam metode ini diperlukan 2 nilai awal, namun tidak seperti metode Biseksi yang digunakan sebagai batas interval. 2 nilai awal pada metode Secant digunakan untuk nilai x<sub>i</sub> dan x<sub>i</sub>.
 
-> Atau secara geometric persamaan tersebut didapatkan dengan menggambarkan garis lurus antara 2 nilai awal x<sub>i-1</sub> dan x<sub>i</sub>. Didaptkan 2 buah segitiga (_ABE_, _DEC_) yang sebangun, berdasarkan konsep sebangun didapatkan
+ Atau secara geometric persamaan tersebut didapatkan dengan menggambarkan garis lurus antara 2 nilai awal x<sub>i-1</sub> dan x<sub>i</sub>. Didaptkan 2 buah segitiga (_ABE_, _DEC_) yang sebangun, berdasarkan konsep sebangun didapatkan
 
 <center><img src="https://render.githubusercontent.com/render/math?math=\frac{AB}{AE}=  \frac{DC}{DE}"></center>
 <br>
 
 <center><img src="https://render.githubusercontent.com/render/math?math=\frac{f(x_i) }{x_i-x_{i+1} }=  \frac{f(x_{i-1}) }{x_{i-1}-x_{i+1}}"></center>
 
-> Jika persamaan di atas disederhanakan, didapatkan kembali __persamaan (3)__
+ Jika persamaan di atas disederhanakan, didapatkan kembali __persamaan (3)__
 
-> #### Algoritma
-1. entukan x<sub>i</sub> dan x<sub>i-1</sub>
-1. Lakukan iterasi menentukan nilai akar yang
-2. nter><img src="https://render.githubusercontent.com/render/math?math=n=x_{i%2B1}= x_i - \frac{f(x_i )-(x_i-x_{i-1})}{f(x_i)-f(x_{i-1})}"></center>
-3. Jika nilai akar x<sub>i+1</sub> , telah korvergen (memenuhi batas toleransi), maka program dihentikan.
+ #### Algoritma
+> 1. Tentukan x<sub>i</sub> dan x<sub>i-1</sub>
+> 2. Lakukan iterasi menentukan nilai akar yang
+<center><img src="https://render.githubusercontent.com/render/math?math=n=x_{i%2B1}= x_i - \frac{f(x_i )-(x_i-x_{i-1})}{f(x_i)-f(x_{i-1})}"></center>
+> 3. Jika nilai akar x<sub>i+1</sub> , telah korvergen (memenuhi batas toleransi), maka program dihentikan.
 
 ```python
 # Script akan dishare saat jam praktikum
