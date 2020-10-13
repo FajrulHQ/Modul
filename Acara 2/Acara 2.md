@@ -15,7 +15,7 @@
 >1. Metode Newton Raphson
 >1. Metode Secant
 ---
-> ## 1. Metode Biseksi
+## 1. Metode Biseksi
 >Metode Biseksi merupakan metode pencarian akar yang paling sederhana. Metode ini mencari akar dengan asumsi `f(x) = 0` pada suatu batas tertutup yang diinputkan, yakni: `a` dan `b`. Oleh karena itu `f(a)` dan nilai `f(b)` harus mempunyai beda tanda
 
 <center><img src="https://render.githubusercontent.com/render/math?math=f(a)*f(b)\leq0"></center>
@@ -40,7 +40,7 @@
 
 <center><img src="https://render.githubusercontent.com/render/math?math=n= \frac{ln (\Delta x/\varepsilon)}{ln(2)}"></center>
 
-> ### Algoritma
+### Algoritma
 > 1. Pilih batas `a` dan `b`, dengan syarat <img src="https://render.githubusercontent.com/render/math?math=f(a)*f(b)\leq0"><br><br>
 > 1. Tentukan nilai tengah `c`, dengan <img src="https://render.githubusercontent.com/render/math?math=c=\frac{a+b}{2}"><br><br>
 > 1. Lalu lakukan pengecekan
@@ -55,7 +55,7 @@
 # Script akan dishare saat jam praktikum
 ```
 ---
-> ## 2. Metode Newton Raphson
+## 2. Metode Newton Raphson
 > Metode Newton Raphson adalah salah satu metode pencarian akar per-samaan nonlinear yang bersifat open methods, artinya dalam proses metode ini tidak diperlukan suatu nilai batas interval seperti metode Biseksi.<br><br>
 > Prinsip Metode Newton Raphson adalah jika suatu persamaan `f(x) = 0`, memiliki akar yang diasumsikan pada x<sub>i</sub>. Lalu dengan menggambarkan kurva tangesial pada f(x<sub>i</sub>), maka titik x<sub>i+1</sub> pada kurva tangesial yang memotong sumbu-x dianggap sebagai akar yang baru. Proses ini dilakukan terus menerus hingga mendapatkan nilai yang konvergen.
 > <center><img src="https://render.githubusercontent.com/render/math?math=n= \frac{ln (\Delta x/\varepsilon)}{ln(2)}"></center>
@@ -89,6 +89,7 @@
 
 <center><img src="https://render.githubusercontent.com/render/math?math=f(x_i )= x_i-  \frac{f(x_i)-f(x_{i-1}) }{x_i-x_{i-1} }"></center><br>
 
+
 > Substitusikan __persamaan (1)__ dan __(2)__, maka didapatkan __persamaan (3)__
 
 <center><img src="https://render.githubusercontent.com/render/math?math=x_{i%2B1}= x_i-  \frac{f(x_i) - (x_i - x_{i-1})}{f(x_i)-f(x_{i-1})}"></center>
@@ -112,7 +113,7 @@
 > Jika persamaan di atas disederhanakan, didapatkan kembali __persamaan (3)__
 
 > #### Algoritma
-> 1. Tentukan x<sub>i</sub> dan x<sub>i-1</sub>
+1. entukan x<sub>i</sub> dan x<sub>i-1</sub>
 > 1. Lakukan iterasi menentukan nilai akar yang baru xi+1 dengan
 > <center><img src="https://render.githubusercontent.com/render/math?math=n=x_{i%2B1}= x_i - \frac{f(x_i )-(x_i-x_{i-1})}{f(x_i)-f(x_{i-1})}"></center>
 
