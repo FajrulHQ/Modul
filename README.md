@@ -12,7 +12,7 @@ __Tema Praktikum Penyelesaian Numerik 2020-2021__
 
 1.	[Sistem Persamaan Linear simultaneous](https://github.com/FajrulHQ/Prakt-Numerik/blob/main/Acara%201/Acara%201.md) [__[Download Here]__](https://drive.google.com/drive/u/0/folders/1183IOE2AyPF-gyQVuzTEYEBTQUtLgtzp)
 
-1.	Sistem non linear dan mencari akar __[Download Here]__
+1.	[Sistem non linear dan mencari akar](https://github.com/FajrulHQ/Prakt-Numerik/blob/main/Acara%202/Acara%202.md) [__[Download Here]__](https://drive.google.com/drive/folders/17aN5QrDvoH_QwJPU4YP9N5pLOv6nVo0q?usp=sharing)
 
 1.	Interpolasi dan kurva fitting __[Download Here]__
 
