@@ -16,12 +16,12 @@
 >1. Metode Secant
 ---
 ## 1. Metode Biseksi
->Metode Biseksi merupakan metode pencarian akar yang paling sederhana. Metode ini mencari akar dengan asumsi `f(x) = 0` pada suatu batas tertutup yang diinputkan, yakni: `a` dan `b`. Oleh karena itu `f(a)` dan nilai `f(b)` harus mempunyai beda tanda
+Metode Biseksi merupakan metode pencarian akar yang paling sederhana. Metode ini mencari akar dengan asumsi `f(x) = 0` pada suatu batas tertutup yang diinputkan, yakni: `a` dan `b`. Oleh karena itu `f(a)` dan nilai `f(b)` harus mempunyai beda tanda
 
 <center><img src="https://render.githubusercontent.com/render/math?math=f(a)*f(b)\leq0"></center>
 <br>
 
->Selanjutnya kita hitung `f(c)` dimana `c` adalah nilai tengah antara `a` dan `b`.
+Selanjutnya kita hitung `f(c)` dimana `c` adalah nilai tengah antara `a` dan `b`.
 
 <center><img src="https://render.githubusercontent.com/render/math?math=c=\frac{a+b}{2}"></center>
 
@@ -32,11 +32,11 @@
 </center>
 <br>
 
->Jika `f(c) = 0` maka `c` adalah akar dari `f(x)`. Jika `f(c) ≠ 0`, kita harus menentukan interval berikutnya. Ada dua kemungkinan interval yang harus kita pilih. Pilihan antara interval `a` dan `c` atau `c` dan `b` dapat ditentukan dengan mencari hasil negatif perkalian `f(c)*f(a)` atau `f(c)*f(b)`. 
+Jika `f(c) = 0` maka `c` adalah akar dari `f(x)`. Jika `f(c) ≠ 0`, kita harus menentukan interval berikutnya. Ada dua kemungkinan interval yang harus kita pilih. Pilihan antara interval `a` dan `c` atau `c` dan `b` dapat ditentukan dengan mencari hasil negatif perkalian `f(c)*f(a)` atau `f(c)*f(b)`. 
 
->Jika kemungkinan pertama benar maka interval selanjutnya yang kita analisis adalah interval antara `a` dan `c`. Demikian juga sebaliknya. Dengan proses yang sama kita cari nilai `f(x)` dari nilai tengah interval yang baru.
+Jika kemungkinan pertama benar maka interval selanjutnya yang kita analisis adalah interval antara `a` dan `c`. Demikian juga sebaliknya. Dengan proses yang sama kita cari nilai `f(x)` dari nilai tengah interval yang baru.
 
->Jumlah biseksi yang diperlukan dapat dihitung dari `ε`.  Interval `Δx` menjadi `Δx/2` setelah 1 biseksi, `Δx^2` setelah `2` biseksi, sehingga setelah `n` biseksi menjadi `Δx/2^n`. Dengan `Δx/2^n = ε`, maka `n` (bilangan bulat) diperoleh:
+Jumlah biseksi yang diperlukan dapat dihitung dari `ε`.  Interval `Δx` menjadi `Δx/2` setelah 1 biseksi, `Δx^2` setelah `2` biseksi, sehingga setelah `n` biseksi menjadi `Δx/2^n`. Dengan `Δx/2^n = ε`, maka `n` (bilangan bulat) diperoleh:
 
 <center><img src="https://render.githubusercontent.com/render/math?math=n= \frac{ln (\Delta x/\varepsilon)}{ln(2)}"></center>
 
@@ -67,12 +67,13 @@
     <img alt="Acara 2" src="https://github.com/FajrulHQ/pict/blob/main/Acara%202/Picture2.jpg?raw=true"><br>
     <b>Gambar 2.</b> Konsep Metode Newthon Raphson
 </center>
+>### Algo
+ritma
 
->### Algoritma
-
->1. Tentukan `f’(x)` secara analitik
+>1. Tentukan 
+`f’(x)` secara analitik
 >1. Tentukan asumsi akar x<sub>i</sub>, untuk menentukan nilai akar yang baru x<sub>i+1</sub>` dengan melakukan iterasi seperti berikut
-> <center><img src="https://render.githubusercontent.com/render/math?math=n= \frac{ln (\Delta x/\varepsilon)}{ln(2)}"></center>
+ <center><img src="https://render.githubusercontent.com/render/math?math=n= \frac{ln (\Delta x/\varepsilon)}{ln(2)}"></center>
 > 3. Jika nilai akar x<sub>i</sub>, telah korvergen (memenuhi batas toleransi), maka program dihentikan<br>
 
 ```python
