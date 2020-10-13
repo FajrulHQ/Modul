@@ -4,12 +4,10 @@
 ## Acara 2. Sistem non linear dan mencari akar 
 </center>
 
-> ### Link Modul
-> * [Google Drive](https://drive.google.com/drive/folders/1uMaBNZ2VWBWpx080plEPaRVnLfh66UfH?usp=sharing)
+> ### Link Modul* [Google Drive](https://drive.google.com/drive/folders/1uMaBNZ2VWBWpx080plEPaRVnLfh66UfH?usp=sharing)
 > * [Github](https://github.com/FajrulHQ/Prakt-Numerik)
 >>  * [Acara 1 - Sistem Persamaan Linear simultaneous](https://github.com/FajrulHQ/Prakt-Numerik/blob/main/Acara%201/Acara%201.md) [__[Download Here]__](https://drive.google.com/drive/u/0/folders/1183IOE2AyPF-gyQVuzTEYEBTQUtLgtzp)
 >>  * [Acara 2 - Sistem non linear dan mencari akar](https://github.com/FajrulHQ/Prakt-Numerik/blob/main/Acara%202/Acara%202.md) __[Download Here]__(https://drive.google.com/drive/folders/17aN5QrDvoH_QwJPU4YP9N5pLOv6nVo0q?usp=sharing)
-
 > ### Contents
 >1. Metode Biseksi
 >1. Metode Newton Raphson
@@ -41,27 +39,27 @@ Jumlah biseksi yang diperlukan dapat dihitung dari `ε`.  Interval `Δx` menjadi
 <center><img src="https://render.githubusercontent.com/render/math?math=n= \frac{ln (\Delta x/\varepsilon)}{ln(2)}"></center>
 
 ### Algoritma
-> 1. Pilih batas `a` dan `b`, dengan syarat <img src="https://render.githubusercontent.com/render/math?math=f(a)*f(b)\leq0"><br><br>
-> 1. Tentukan nilai tengah `c`, dengan <img src="https://render.githubusercontent.com/render/math?math=c=\frac{a+b}{2}"><br><br>
-> 1. Lalu lakukan pengecekan
->> *	Jika `f(a)` atau `f(b)` atau `f(c)` bernilai `nol`, maka penyelesaiannya adalah nilai tersebut
->> *	Jika `f(a)*f(c) < 0`, maka nilai akar berada antara `a` dan `c`, lakukan swap, `a = a` dan `b = c`
->> *   Jika `f(a)*f(c) > 0`, maka nilai akar berada antara `c` dan `b`, lakukan swap, `a = c` dan `b = b`
->> *	Jika `f(a)*f(c) = 0`, maka akarnya adalah `c`. Hentikan Algortitma
->> *	Langkah 2 diulang dengan menggunakan nilai `a` dan `b` yang baru 
->> *	Jika nilai `c` sudah memenuhi nilai tolerasi. Program dihentikan 
+1. Pilih batas `a` dan `b`, dengan syarat <img src="https://render.githubusercontent.com/render/math?math=f(a)*f(b)\leq0"><br><br>
+2. . Tentukan nilai tengah `c`, dengan <img src="https://render.githubusercontent.com/render/math?math=c=\frac{a+b}{2}"><br><br>
+3.  Lalu lakukan pengecekan
+> *	Jika `f(a)` atau `f(b)` atau `f(c)` bernilai `nol`, maka penyelesaiannya adalah nilai tersebut
+> *	Jika `f(a)*f(c) < 0`, maka nilai akar berada antara `a` dan `c`, lakukan swap, `a = a` dan `b = c`
+> * Jika `f(a)*f(c) > 0`, maka nilai akar berada antara `c` dan `b`, lakukan swap, `a = c` dan `b = b`
+> *	Jika `f(a)*f(c) = 0`, maka akarnya adalah `c`. Hentikan Algortitma
+> *	Langkah 2 diulang dengan menggunakan nilai `a` dan `b` yang baru 
+> *	Jika nilai `c` sudah memenuhi nilai tolerasi. Program dihentikan 
 
 ```python
 # Script akan dishare saat jam praktikum
 ```
 ---
 ## 2. Metode Newton Raphson
-> Metode Newton Raphson adalah salah satu metode pencarian akar per-samaan nonlinear yang bersifat open methods, artinya dalam proses metode ini tidak diperlukan suatu nilai batas interval seperti metode Biseksi.<br><br>
-> Prinsip Metode Newton Raphson adalah jika suatu persamaan `f(x) = 0`, memiliki akar yang diasumsikan pada x<sub>i</sub>. Lalu dengan menggambarkan kurva tangesial pada f(x<sub>i</sub>), maka titik x<sub>i+1</sub> pada kurva tangesial yang memotong sumbu-x dianggap sebagai akar yang baru. Proses ini dilakukan terus menerus hingga mendapatkan nilai yang konvergen.
-> <center><img src="https://render.githubusercontent.com/render/math?math=n= \frac{ln (\Delta x/\varepsilon)}{ln(2)}"></center>
+ Metode Newton Raphson adalah salah satu metode pencarian akar per-samaan nonlinear yang bersifat open methods, artinya dalam proses metode ini tidak diperlukan suatu nilai batas interval seperti metode Biseksi.<br><br>
+ Prinsip Metode Newton Raphson adalah jika suatu persamaan `f(x) = 0`, memiliki akar yang diasumsikan pada x<sub>i</sub>. Lalu dengan menggambarkan kurva tangesial pada f(x<sub>i</sub>), maka titik x<sub>i+1</sub> pada kurva tangesial yang memotong sumbu-x dianggap sebagai akar yang baru. Proses ini dilakukan terus menerus hingga mendapatkan nilai yang konvergen.
+ <center><img src="https://render.githubusercontent.com/render/math?math=n= \frac{ln (\Delta x/\varepsilon)}{ln(2)}"></center>
 > 
->>maka
->> <center><img src="https://render.githubusercontent.com/render/math?math=n= \frac{ln (\Delta x/\varepsilon)}{ln(2)}"></center>
+>maka
+> <center><img src="https://render.githubusercontent.com/render/math?math=n= \frac{ln (\Delta x/\varepsilon)}{ln(2)}"></center>
 <br>
 <center>
     <img alt="Acara 2" src="https://github.com/FajrulHQ/pict/blob/main/Acara%202/Picture2.jpg?raw=true"><br>
@@ -72,9 +70,9 @@ ritma
 
 >1. Tentukan 
 `f’(x)` secara analitik
->1. Tentukan asumsi akar x<sub>i</sub>, untuk menentukan nilai akar yang baru x<sub>i+1</sub>` dengan melakukan iterasi seperti berikut
- <center><img src="https://render.githubusercontent.com/render/math?math=n= \frac{ln (\Delta x/\varepsilon)}{ln(2)}"></center>
-> 3. Jika nilai akar x<sub>i</sub>, telah korvergen (memenuhi batas toleransi), maka program dihentikan<br>
+1. Tentukan asumsi akar x<sub>i</su
+2. nter><img src="https://render.githubusercontent.com/render/math?math=n= \frac{ln (\Delta x/\varepsilon)}{ln(2)}"></center>
+ 3. Jika nilai akar x<sub>i</sub>, telah korvergen (memenuhi batas toleransi), maka program dihentikan<br>
 
 ```python
 # Script akan dishare saat jam praktikum
@@ -114,10 +112,9 @@ Jika pada metode Newton Raphson diperlukan proses iterasi untuk mendapatkan nila
 
 > #### Algoritma
 1. entukan x<sub>i</sub> dan x<sub>i-1</sub>
-> 1. Lakukan iterasi menentukan nilai akar yang baru xi+1 dengan
-> <center><img src="https://render.githubusercontent.com/render/math?math=n=x_{i%2B1}= x_i - \frac{f(x_i )-(x_i-x_{i-1})}{f(x_i)-f(x_{i-1})}"></center>
-
-> 3. Jika nilai akar x<sub>i+1</sub> , telah korvergen (memenuhi batas toleransi), maka program dihentikan.
+1. Lakukan iterasi menentukan nilai akar yang
+2. nter><img src="https://render.githubusercontent.com/render/math?math=n=x_{i%2B1}= x_i - \frac{f(x_i )-(x_i-x_{i-1})}{f(x_i)-f(x_{i-1})}"></center>
+3. Jika nilai akar x<sub>i+1</sub> , telah korvergen (memenuhi batas toleransi), maka program dihentikan.
 
 ```python
 # Script akan dishare saat jam praktikum
