@@ -113,8 +113,7 @@ Jika pada metode Newton Raphson diperlukan proses iterasi untuk mendapatkan nila
  #### Algoritma
 > 1. Tentukan x<sub>i</sub> dan x<sub>i-1</sub>
 > 2. Lakukan iterasi menentukan nilai akar yang
-<center><img src="https://render.githubusercontent.com/render/math?math=n=x_{i%2B1}= x_i - \frac{f(x_i )-(x_i-x_{i-1})}{f(x_i)-f(x_{i-1})}"></center>
-
+<img src="https://render.githubusercontent.com/render/math?math=n=x_{i%2B1}= x_i - \frac{f(x_i )-(x_i-x_{i-1})}{f(x_i)-f(x_{i-1})}">
 > 3. Jika nilai akar x<sub>i+1</sub> , telah korvergen (memenuhi batas toleransi), maka program dihentikan.
 
 ```python
