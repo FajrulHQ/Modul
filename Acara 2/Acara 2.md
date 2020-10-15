@@ -8,7 +8,7 @@
 > * [Google Drive](https://drive.google.com/drive/folders/1uMaBNZ2VWBWpx080plEPaRVnLfh66UfH?usp=sharing)
 > * [Github](https://github.com/FajrulHQ/Prakt-Numerik)
 >>  * [Acara 1 - Sistem Persamaan Linear simultaneous](https://github.com/FajrulHQ/Prakt-Numerik/blob/main/Acara%201/Acara%201.md) [__[Download Here]__](https://drive.google.com/drive/u/0/folders/1183IOE2AyPF-gyQVuzTEYEBTQUtLgtzp)
->>  * [Acara 2 - Sistem non linear dan mencari akar](https://github.com/FajrulHQ/Prakt-Numerik/blob/main/Acara%202/Acara%202.md) __[Download Here]__(https://drive.google.com/drive/folders/17aN5QrDvoH_QwJPU4YP9N5pLOv6nVo0q?usp=sharing)
+>>  * [Acara 2 - Sistem non linear dan mencari akar](https://github.com/FajrulHQ/Prakt-Numerik/blob/main/Acara%202/Acara%202.md) [__[Download Here]__](https://drive.google.com/drive/folders/17aN5QrDvoH_QwJPU4YP9N5pLOv6nVo0q?usp=sharing)
 > ### Contents
 >1. Metode Biseksi
 >1. Metode Newton Raphson
@@ -17,7 +17,7 @@
 ## 1. Metode Biseksi
 Metode Biseksi merupakan metode pencarian akar yang paling sederhana. Metode ini mencari akar dengan asumsi `f(x) = 0` pada suatu batas tertutup yang diinputkan, yakni: `a` dan `b`. Oleh karena itu `f(a)` dan nilai `f(b)` harus mempunyai beda tanda
 
-<center><img src="https://render.githubusercontent.com/render/math?math=f(a)*f(b)\lt"></center>
+<center><img src="https://render.githubusercontent.com/render/math?math=f(a)*f(b)\lt0"></center>
 <br>
 
 Selanjutnya kita hitung `f(c)` dimana `c` adalah nilai tengah antara `a` dan `b`.
@@ -51,7 +51,41 @@ Jumlah biseksi yang diperlukan dapat dihitung dari `ε`.  Interval `Δx` menjadi
 > *	Jika nilai `c` sudah memenuhi nilai tolerasi. Program dihentikan 
 
 ```python
-# Script akan dishare saat jam praktikum
+import math
+from numpy import sign
+
+def bisection(f,x1,x2,switch=1,tol=1.0e-9):
+  f1 = f(x1)
+  if f1 == 0.0: 
+      return x1
+  f2 = f(x2)
+  if f2 == 0.0: 
+      return x2
+  if sign(f1) == sign(f2):
+      raise ValueError('Root is not bracketed')
+
+  n = int(math.ceil(math.log(abs(x2 - x1)/tol)/math.log(2.0)))
+  for i in range(n):
+      x3 = 0.5*(x1 + x2); f3 = f(x3)
+      if (switch == 1) and (abs(f3) > abs(f1)) and (abs(f3) > abs(f2)):
+          return None
+      
+      if f3 == 0.0: return x3
+      if sign(f2)!= sign(f3): x1 = x3; f1 = f3
+      else: x2 = x3; f2 = f3
+  return (x1 + x2)/2.0
+```
+
+```python
+import numpy as np
+from bisection import*
+
+def f(x): 
+    return x**3 - 7.0*x + 1.0
+
+x = bisection(f, 2.0, 4.0, tol = 1.0e-4)
+
+print('\nx =', '{:6.4f}'.format(x))
 ```
 ---
 ## 2. Metode Newton Raphson
@@ -84,7 +118,23 @@ Jumlah biseksi yang diperlukan dapat dihitung dari `ε`.  Interval `Δx` menjadi
 3. Jika nilai akar x<sub>i</sub>, telah korvergen (memenuhi batas toleransi), maka program dihentikan<br>
 
 ```python
-# Script akan dishare saat jam praktikum
+## newthonRaphson method
+
+def f(x): return x**4 - 6.4*x**3 + 6.45*x**2 + 20.538*x - 31.752
+def df(x): return 4.0*x**3 - 19.2*x**2 + 12.9*x + 20.538
+
+def newtonRaphson(x,tol=1.0e-9):
+    for i in range(30):
+        dx = -f(x)/df(x)
+        x = x + dx
+        if abs(dx) < tol: return x,i 
+    print ('Too many iterations\n')
+
+root,numIter = newtonRaphson(2.0)
+# nilai 2.0 akan diinputkan ke fungsi newtonRaphson sebagai x
+
+print ('Root =',root) 
+print ('Number of iterations =',numIter)
 ```
 ---
 ## Metode Secant
@@ -126,5 +176,29 @@ Jika persamaan di atas disederhanakan, didapatkan kembali __persamaan (3)__
 3. Jika nilai akar x<sub>i+1</sub> , telah korvergen (memenuhi batas toleransi), maka program dihentikan.
 
 ```python
-# Script akan dishare saat jam praktikum
-```
+# Program Secant 
+print("------------ Program Secant ------------")
+
+def f(x):
+    return x**3 - 7.0*x + 1.0
+
+xlama = int(input("Masukkan nilai x1: ")) 
+xbaru = int(input("Masukkan nilai x2: "))
+
+eps = float(input("Masukkan nilai toleransi:")) 
+max_iter = int(input("\nMasukkan nilai maksimal iterasi: "))
+count = 0
+
+for i in range(max_iter):
+    if (abs(xbaru-xlama) >= eps):
+        count=count+1
+        xsementara = xbaru
+        xbaru = xbaru-(f(xbaru)*(xbaru-xlama))/(f(xbaru)-f(xlama))
+        xlama = xsementara
+        print(count," ",'{:17.15f}'.format(xbaru),"",'{:17.15f}'.format(xlama))
+
+x = xbaru
+x = xbaru 
+
+print("\nNilai akar adalah: ",x) 
+print("\nJumlah iterasi: ",count)
