@@ -65,13 +65,11 @@ Jumlah biseksi yang diperlukan dapat dihitung dari `ε`.  Interval `Δx` menjadi
     <img alt="Acara 2" src="https://github.com/FajrulHQ/pict/blob/main/Acara%202/Picture2.jpg?raw=true"><br>
     <b>Gambar 2.</b> Konsep Metode Newthon Raphson
 </center>
->### Algo
-ritma
+### Algoritma
 
->1. Tentukan 
+1. Tentukan 
 `f’(x)` secara analitik
-1. Tentukan asumsi akar x<sub>i</su
-2. nter><img src="https://render.githubusercontent.com/render/math?math=n= \frac{ln (\Delta x/\varepsilon)}{ln(2)}"></center>
+2. Tentukan asumsi akar x<sub>i </sub>untuk menentukan nilai akar yang baru x<sub>i+1</sub><img src="https://render.githubusercontent.com/render/math?math=n= \frac{ln (\Delta x/\varepsilon)}{ln(2)}">
  3. Jika nilai akar x<sub>i</sub>, telah korvergen (memenuhi batas toleransi), maka program dihentikan<br>
 
 ```python
