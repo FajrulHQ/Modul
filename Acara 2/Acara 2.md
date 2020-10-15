@@ -67,7 +67,7 @@ Jumlah biseksi yang diperlukan dapat dihitung dari `ε`.  Interval `Δx` menjadi
     <img alt="Acara 2" src="https://github.com/FajrulHQ/pict/blob/main/Acara%202/Picture2.jpg?raw=true"><br>
     <b>Gambar 2.</b> Konsep Metode Newthon Raphson
 </center>
-<<<<<<< HEAD
+
 ### Algoritma
 
 1. Tentukan 
