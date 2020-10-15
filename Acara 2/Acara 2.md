@@ -17,7 +17,7 @@
 ## 1. Metode Biseksi
 Metode Biseksi merupakan metode pencarian akar yang paling sederhana. Metode ini mencari akar dengan asumsi `f(x) = 0` pada suatu batas tertutup yang diinputkan, yakni: `a` dan `b`. Oleh karena itu `f(a)` dan nilai `f(b)` harus mempunyai beda tanda
 
-<center><img src="https://render.githubusercontent.com/render/math?math=f(a)*f(b)\leq0"></center>
+<center><img src="https://render.githubusercontent.com/render/math?math=f(a)*f(b)\lt"></center>
 <br>
 
 Selanjutnya kita hitung `f(c)` dimana `c` adalah nilai tengah antara `a` dan `b`.
