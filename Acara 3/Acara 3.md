@@ -113,7 +113,7 @@ Misalkan tersedia data-data `y` pada berbagai `x` (sejumlah `n` pasang), maka da
 
  Cara mengevaluasi nilai-nilai tetapan dalam persamaan empirik: __visual inspection__, __method of average__, dan __metode kuadrat terkecil__ (_least squares_). Metode kuadrat terkecil merupakan metode yang paling banyak digunakan. Pada metode ini, nilai-nilai tetapan terbaik adalah yang memberikan jumlah kuadrat kesalahan/penyimpangan (_sum of squares of errors_, __SSE__) yang terkecil (minimum).
 
-Bentuk persamaan linier: (1) `y = a x` dan (2) `y = a_0 %2B a_1 x`
+Bentuk persamaan linier: (1) $y = a x$ dan (2) $y = a_0 %2B a_1 x$
 
 ---
 
