@@ -147,8 +147,8 @@ Untuk pasangan data `xi`, `yi`, maka error-nya adalah:
 
 ---
 
- ### 2.  Bentuk Persamaan: y = a<sub>0</sub> %2B a<sub>1</sub>x
- ingin dicari harga `a_0` dan `a_1` (`a_0` biasa disebut sebagai intercept dan `a_1` sebagai slope). Dengan cara yang sama, untuk pasangan data `xi`, `yi`, maka error-nya adalah:
+ ### 2.  Bentuk Persamaan: y = a<sub>0</sub> + a<sub>1</sub>x
+ ingin dicari harga a<sub>0</sub> dan a<sub>1</sub> (a<sub>0</sub> biasa disebut sebagai intercept dan a<sub>1</sub> sebagai slope). Dengan cara yang sama, untuk pasangan data `xi`, `yi`, maka error-nya adalah:
 <center>
 <img alt="Acara 3" src = "https://github.com/FajrulHQ/pict/blob/main/Acara%203/Picture8.png?raw=true" >
 </center>
