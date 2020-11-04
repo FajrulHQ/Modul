@@ -120,7 +120,7 @@ Bentuk persamaan linier: (1) y = a x dan (2) y = a<sub>0</sub> + a<sub>1</sub> x
  ### 1. Bentuk Persamaan: y=ax
  ingin dicari harga a (a biasa disebut sebagai slope)
 Untuk pasangan data `xi`, `yi`, maka error-nya adalah:
-<center><img src="https://render.githubusercontent.com/render/math?math=R_i=a x_i- y_i	=y_{terhitung }- y_{data}"></center><br>
+<center><img src="https://render.githubusercontent.com/render/math?math=R_i=ax_i-y_i=y_{terhitung}-y_{data}"></center><br>
 
 > sehingga nilai sum of squares of errors-nya: 
 <center>
