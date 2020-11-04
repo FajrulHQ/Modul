@@ -184,7 +184,7 @@ Untuk pasangan data `xi`, `yi`, maka error-nya adalah:
 <img alt="Acara 3" src = "https://github.com/FajrulHQ/pict/blob/main/Acara%203/Picture14.png?raw=true" >
 </center><br>
 
-> Berdasarkan persamaan (11) dan (12), maka harga `a_0` dan `a_1` ¬ dapat ditentukan. Misal, dengan menggunakan __Cramer’s rule__, diperoleh:
+> Berdasarkan persamaan (11) dan (12), maka harga a<sub>0</sub> dan a<sub>1</sub> dapat ditentukan. Misal, dengan menggunakan __Cramer’s rule__, diperoleh:
 
 <center>
 <img alt="Acara 3" src = "https://github.com/FajrulHQ/pict/blob/main/Acara%203/Picture15.png?raw=true" >
