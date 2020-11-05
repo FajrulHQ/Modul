@@ -92,7 +92,7 @@ Interpolasi
 - membuat peta di surfer
 
 <center>
-    <img src="https://www.goldensoftware.com/images/stories/Newsletter/Issue_71/gridding/ExampleKriging.png" width=400px><br>
+    <img src="https://www.goldensoftware.com/images/stories/Newsletter/Issue_71/gridding/ExampleNatural.png" width=400px><br>
     <b> Gambar 1.</b> Surfer Griding Methods
 </center>
 ---
@@ -217,4 +217,9 @@ Regresi linear
 <center>
     <img src="https://3.bp.blogspot.com/_XDhgYlcSKOs/TNbRqzBLj2I/AAAAAAAABng/4A96oVq8vI8/s1600/refract_f.png" width=300px><br>
     <b> Gambar 2.</b> Kurva t-x
+</center>
+<br>
+<center>
+    <img src="https://i.ibb.co/wYpDpwZ/Whats-App-Image-2020-11-05-at-10-38-17.jpg" alt="Whats-App-Image-2020-11-05-at-10-38-17" border="0"></a><br>
+    <b> Gambar 3.</b> Penentuan Hiposenter
 </center>
