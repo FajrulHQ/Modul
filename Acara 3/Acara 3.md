@@ -87,6 +87,14 @@ Misalkan untuk `orde polinomial` N=2
 <img src="https://render.githubusercontent.com/render/math?math=l_3(x)=\frac{(x-x_1)(x-x_2)}{(x_3-x_1)(x_3-x_2)} ">
 </center>
 
+### Penerapan di Geofisika
+Interpolasi
+- membuat peta di surfer
+
+<center>
+    <img src="https://www.goldensoftware.com/images/stories/Newsletter/Issue_71/gridding/ExampleKriging.png" width=400px><br>
+    <b> Gambar 1.</b> Surfer Griding Methods
+</center>
 ---
 
  ## Curve Fitting :
@@ -198,4 +206,15 @@ Untuk pasangan data `xi`, `yi`, maka error-nya adalah:
 
 <center>
 <img alt="Acara 3" src = "https://github.com/FajrulHQ/pict/blob/main/Acara%203/Picture17.png?raw=true" >
+</center>
+
+### Penerapannya di Geofisika
+Regresi linear
+- kurva t-x seismik refraksi
+- seismologi penentuan hiposenter (S-P vs P)
+  
+
+<center>
+    <img src="https://3.bp.blogspot.com/_XDhgYlcSKOs/TNbRqzBLj2I/AAAAAAAABng/4A96oVq8vI8/s1600/refract_f.png" width=300px><br>
+    <b> Gambar 2.</b> Kurva t-x
 </center>
