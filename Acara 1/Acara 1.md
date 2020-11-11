@@ -29,7 +29,7 @@
 
 <center>
   
-  ![Acara1](/pict/Acara%201/01.png)
+  ![Acara 1](https://github.com/FajrulHQ/pict/blob/main/Acara%201/01.png?raw=true)
 </center>
 
 > menjadi matrik augmentasi
