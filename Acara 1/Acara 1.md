@@ -29,7 +29,7 @@
 
 <center>
   
-  ![Acara1](/cek-modul/pict/Acara%201/01.png)
+  ![Acara1](/pict/Acara%201/01.png)
 </center>
 
 > menjadi matrik augmentasi
