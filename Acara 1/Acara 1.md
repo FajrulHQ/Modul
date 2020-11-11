@@ -28,7 +28,8 @@
 > Eleminasi Gauss mengubah matrik dalam bentuk: <br>
 
 <center>
-    <img alt="Acara 1" src="https://github.com/FajrulHQ/pict/blob/main/Acara%201/01.png?raw=true">
+  
+  ![Acara1](/cek-modul/pict/Acara%201/01.png)
 </center>
 
 > menjadi matrik augmentasi
