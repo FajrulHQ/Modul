@@ -38,6 +38,7 @@ Cari nilai differensiasi dengan nilai `x=[-6, -5.8,...., 5.8, 6]`menggunakan met
 ![contoh1](../pict/Acara%204/contoh1.jpeg)<br>
 <b> Gambar 1.</b> Penyelesaian derivatif
 </center>
+
 ---
 
 ## Integral
