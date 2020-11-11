@@ -31,6 +31,13 @@
 <img src="https://render.githubusercontent.com/render/math?math=f(x)=e^{-x^2},-6\leq x\leq6"><br> 
 Cari nilai differensiasi dengan nilai `x=[-6, -5.8,...., 5.8, 6]`menggunakan metode `Central Finite Difference`!
 
+### Penerapan di Geofisika
+
+<center>
+
+![contoh1](../pict/Acara%204/contoh1.jpeg)<br>
+<b> Gambar 1.</b> Penyelesaian derivatif
+</center>
 ---
 
 ## Integral
@@ -43,7 +50,7 @@ Cari nilai differensiasi dengan nilai `x=[-6, -5.8,...., 5.8, 6]`menggunakan met
 <center>
 
   ![Acara 4](https://github.com/FajrulHQ/Prakt-Numerik/blob/main/pict/Acara%204/Picture1.png?raw=true)<br>
-  <b> Gambar 1.</b> Integral merupakan luasan dibawah suatu kurva f(x) pada a dan b
+  <b> Gambar 2.</b> Integral merupakan luasan dibawah suatu kurva f(x) pada a dan b
 </center>
 
 ### 2. Metode Trapeziodal<br>
@@ -119,3 +126,9 @@ Membuat persamaan integral menjadi seperti berikut
 </center><br>
 
 >> Karena terdapat persamaan <img src="https://render.githubusercontent.com/render/math?math=\frac{h}{3} "> , oleh sebab itu algoritma ini disebut sebagai `Simspson’s 1/3`
+
+<center>
+
+![contoh1](../pict/Acara%204/contoh2.jpeg)<br>
+<b> Gambar 3.</b> Chargeability
+</center>
