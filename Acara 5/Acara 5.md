@@ -1,7 +1,7 @@
 <center> 
 
 # Modul Praktikum Numerik </h1>
-## Acara 6. Partial Differential Equations (ODE) 
+## Acara 5. Ordinary Differential Equations (ODE) 
 </center>
 
 > ### Link Modul
