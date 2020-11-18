@@ -46,11 +46,16 @@ Model penurunan suhu akibat pengaruh atsmosfer di sekitarnya:
  Untuk nilai x dekat dengan x<sub>0</sub>
 
 <center>
+
 <img src="https://render.githubusercontent.com/render/math?math=y(x)\approx y'(x_0)(x-x_0)%2By(x_0)=(x-x_0)f(x_0,y_0)%2By_0 "><br>
+
 <img src="https://render.githubusercontent.com/render/math?math=y(x_1)\approx (x_1-x_0)f(x_0,y_0)%2By_0=\Delta xf(x_0,y_0)%2By_0 "><br>
+
 <img src="https://render.githubusercontent.com/render/math?math=y(x_2)\approx (x_2-x_1)f(x_1,y_1)%2By_1=\Delta xf(x_1,y_1)%2By_1 "><br>
 .<br>.<br>.<br>
+
 <img src="https://render.githubusercontent.com/render/math?math=y(x_n)\approx (x_n-x_{n-1})f(x_n,y_{n-1})%2By_{n-1}=\Delta xf(x_{n-1},y_{n-1})%2By_{n-1} "><br>
+
 <img src="https://render.githubusercontent.com/render/math?math=y_{j%2B1}=\Delta xf(x_j,y_j)%2By_j "><br>
 </center>
 
