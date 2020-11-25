@@ -70,7 +70,8 @@ Di mana `u` adalah perpindahan transversal pada jarak `x` dari ujung tali dengan
 <br>
 Contoh    :
 <center>
-<img src="https://github.com/FajrulHQ/pict/blob/main/Acara%206/Picture%201.png?raw=true ">
+
+![img1](../pict/Acara%206/Picture%201.png)
 </center>
 
 Persamaan perambatan panas 1D
