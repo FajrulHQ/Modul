@@ -20,4 +20,4 @@ __Tema Praktikum Penyelesaian Numerik 2020-2021__
 
 1.	[ODE (Ordinary Differential Equations)](https://github.com/FajrulHQ/Prakt-Numerik/blob/main/Acara%205/Acara%205.md) [__[Download Here]__](https://drive.google.com/drive/folders/1mr4_QPAsfgZ9kfSoK0zEPxMiex7iG5Ir)
 
-1.	PDE (Partial Differential Equations) __[Download Here]__
+1.	[PDE (Partial Differential Equations)](https://github.com/FajrulHQ/Prakt-Numerik/blob/main/Acara%206/Acara%206.md) [__[Download Here]__](https://drive.google.com/drive/folders/1_Y8Rr2Few7SgH5HPCtPi-Q3TE4u3VKUH)
